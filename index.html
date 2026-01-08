@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maybe515 Studio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="module" src="assets/js/main.js" defer></script>
+</head>
+
+<body id="top">
+    <!-- ヘッダー -->
+    <header class="site-header">
+        <div class="site-title">Maybe515 Studio – MAYBEL</div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#top">Top</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="contact.html" class="contact-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="layout">
+            <button class="side-toggle" aria-label="Open sidebar">☰</button>
+            <div class="main-content-wrapper">
+                <!-- メイン -->
+                <div class="main-content">
+                    <!-- ヒーローセクション -->
+                    <main class="hero">
+                        <h1 class="hero-title">めいびぃさんの隠れ家</h1>
+                        <p class="hero-subtitle">
+                            ようこそ！こちらでは、今までの活動内容をまとめています。
+                        </p>
+
+                        <!-- <div class="hero-buttons">
+                            <a href="profile.html" class="btn">プロフィール</a>
+                            <a href="gallery.html" class="btn">作品ギャラリー</a>
+                            <a href="projects.html" class="btn">プロジェクト</a>
+                            <a href="blog/index.html" class="btn">ブログ</a>
+                        </div> -->
+                    </main>
+
+                    <!-- 作品セクション（スライドショー） -->
+                    <section class="section" id="gallery">
+                        <h2 class="section-title">作品ギャラリー</h2>
+                        <p class="section-desc">デジタルアート作品の一部を紹介します。</p>
+
+                        <div class="slideshow-container" id="slideshow"></div>
+                        <div class="dots" id="dots"></div>
+
+                        <!-- ファンアートページへのリンクボタン -->
+                        <div class="gallery-link">
+                            <a href="fanart.html" class="btn fanart-btn">ファンアートギャラリーを見る</a>
+                        </div>
+                    </section>
+
+
+                    <!-- プロジェクトセクション -->
+                    <section class="section projects" id="projects">
+                        <h2 class="section-title">プロジェクト</h2>
+                        <p class="section-desc">技術的な取り組みやツール開発を一部紹介します。</p>
+
+                        <div class="project-grid">
+                            <a href="https://github.com/Maybe515/Nostr-Observe-chan" class="project-card lang-js">
+                                <h3>Nostr監視ちゃん</h3>
+                                <p>Nostrのkind:1イベントを監視し、指定キーワードと一致したイベントをDiscordにEmbed通知するbot</p>
+                                <div class="project-langs">
+                                    <span class="project-lang lang-js">JavaScript</span>
+                                    <span class="project-lang lang-batch">Batch</span>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/Maybe515/Nostr-Link-chan" class="project-card lang-js">
+                                <h3>Nostrリンクちゃん</h3>
+                                <p>Nostrの指定Pubkey宛のkind: 1, 6, 7, 9735を取得してDiscordにEmbed通知するbot</p>
+                                <div class="project-langs">
+                                    <span class="project-lang lang-js">JavaScript</span>
+                                    <span class="project-lang lang-batch">Batch</span>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/Maybe515/ZZZ-dmgCalc" class="project-card lang-html">
+                                <h3>ゼンレスゾーンゼロ ダメージ計算ツール</h3>
+                                <p>ゼンゼロのダメージを簡単に計算できるブラウザベースのツール</p>
+                                <div class="project-langs">
+                                    <span class="project-lang lang-html">HTML</span>
+                                    <span class="project-lang lang-js">JavaScript</span>
+                                    <span class="project-lang lang-css">CSS</span>
+                                </div>
+                            </a>
+
+                        </div>
+                    </section>
+                </div>
+
+                <!-- 右ペイン -->
+                <aside class="sidebar">
+                    <!-- プチ自己紹介 -->
+                    <div class="sidebar-profile">
+                        <div class="sidebar-profile"> <img src="assets/img/icon.png" alt="プロフィールアイコン"
+                                class="sidebar-icon">
+                            <div class="sidebar-username">めいびぃ</div>
+                            <h3>About Me</h3>
+                            <p>
+                                旅行やゲーム、ダーツと幅広く色んなことをしています。イラスト描いたり、ツールを作ってたりもします。
+                            </p>
+
+                            <h3>Connect with me</h3>
+                            <div class="sidebar-social">
+                                <div class="social-icons">
+                                    <a href="https://x.com/Maybe515" target="_blank" class="social-icon social-x">
+                                        <img src="assets/img/icons/x.svg" alt="X">
+                                    </a>
+                                    <a href="https://github.com/Maybe515" target="_blank"
+                                        class="social-icon social-github">
+                                        <img src="assets/img/icons/github.svg" alt="GitHub">
+                                    </a>
+                                    <a href="https://www.pixiv.net/users/14572354" target="_blank"
+                                        class="social-icon social-pixiv">
+                                        <img src="assets/img/icons/pixiv.svg" alt="Pixiv">
+                                    </a>
+                                </div>
+
+                                <button class="social-toggle">▼ もっと見る</button>
+                                <div class="social-more">
+                                    <a href="#" target="_blank" class="social-icon"><img src="icons/youtube.svg"
+                                            alt="YouTube"></a>
+                                    <a href="#" target="_blank" class="social-icon"><img src="icons/tiktok.svg"
+                                            alt="TikTok"></a>
+                                    <a href="#" target="_blank" class="social-icon"><img src="icons/bluesky.svg"
+                                            alt="Bluesky"></a>
+                                    <a href="#" target="_blank" class="social-icon"><img src="icons/discord.svg"
+                                            alt="Discord"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ブログセクション -->
+                        <h3>最新ブログ</h3>
+                        <ul>
+                            <li><a href="#">記事タイトル1</a></li>
+                            <li><a href="#">記事タイトル2</a></li>
+                            <li><a href="#">記事タイトル3</a></li>
+                        </ul>
+                </aside>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <p>© 2025-2026 Maybe515. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
