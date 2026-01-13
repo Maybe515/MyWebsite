@@ -11,17 +11,18 @@ export function initSocialToggle() {
             const isOpen = more.classList.contains("open");
             const style = window.getComputedStyle(more);
             const paddingBottom = parseInt(style.paddingBottom);
+            const padding = 18;
 
             if (isOpen) {
                 more.style.maxHeight = "0px";
-                more.style.paddingBottom = paddingBottom + "px";
+                more.style.paddingBottom = paddingBottom - padding + "px";
                 more.classList.remove("open");
                 toggle.textContent = "▼ もっと見る";
             } else {
                 const paddingTop = parseInt(style.paddingTop);
 
                 more.style.maxHeight = (more.scrollHeight + paddingTop + paddingBottom) + "px";
-                more.style.paddingBottom = paddingBottom + 18 + "px";
+                more.style.paddingBottom = paddingBottom + padding + "px";
                 more.classList.add("open");
                 toggle.textContent = "▲ 閉じる";
             }

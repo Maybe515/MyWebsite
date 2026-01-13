@@ -2,15 +2,20 @@ function updateSidebarHeight() {
     const sidebar = document.querySelector(".sidebar");
     if (!sidebar) return;
 
-    if (document.body.classList.contains("is-mobile")) {
-        const headerHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue("--header-height"));
-        const offset = headerHeight + 100;
-        const height = window.innerHeight - offset;
+    const headerHeight = document.querySelector("header").offsetHeight;
+    const sideToggleHeight = 52;
+    const margin = 12;
 
-        sidebar.style.height = `${height}px`;
-    } else {
-        sidebar.style.height = "";
-    }
+    const layout = document.querySelector(".layout");
+    const layoutPaddingTop = parseInt(getComputedStyle(layout).paddingTop);
+
+    const isMobile = document.body.classList.contains("is-mobile");
+
+    const baseOffset = headerHeight + margin + layoutPaddingTop;
+    const mobileExtra = sideToggleHeight + layoutPaddingTop;
+
+    const offset = isMobile ? baseOffset + mobileExtra : baseOffset;
+    document.documentElement.style.setProperty("--sidebar-top", offset + "px");
 }
 
 export function updateDeviceState() {

@@ -21,16 +21,20 @@
 /* ----- 右ペイン（sidebar） ----- */
 .sidebar {
     flex: 1;
-    padding: 24px 24px;
+    padding: 24px;
     margin-left: 32px;
     background: #f7f7f7;
     border-radius: var(--radius-md); 
     box-shadow: var(--shadow-md);
     position: sticky;
-    top: 120px;
-    height: fit-content;
+    top: var(--sidebar-top);
+    max-height: calc(100vh - var(--sidebar-top) - (48px + 40px));
     transition: transform 0.3s ease;
     overflow-y: auto;
+}
+
+.sidebar-content {
+    overflow: visible;
 }
 
 /* ----- ナビゲーション（ヘッダー） ----- */
