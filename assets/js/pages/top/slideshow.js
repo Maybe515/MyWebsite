@@ -1,5 +1,9 @@
+import { getBasePath } from "../../utils/base-path.js";
+const BASE_PATH = getBasePath();
+const JSON_PATH = BASE_PATH + "/data/top/slideshow-list.json";
+
 export async function initSlideshow() {
-    const res = await fetch("/data/top/slideshow-list.json");
+    const res = await fetch(JSON_PATH);
     const imageList = await res.json();
 
     let slideIndex = 1;
@@ -43,7 +47,7 @@ export async function initSlideshow() {
     imageList.forEach((file, index) => {
         const slide = document.createElement("div");
         slide.className = "slide fade";
-        slide.innerHTML = `<img src="/assets/img/gallery/${file}" alt="作品${index + 1}">`;
+        slide.innerHTML = `<img src="${BASE_PATH}/assets/img/gallery/${file}" alt="作品${index + 1}">`;
         slideshow.appendChild(slide);
 
         const dot = document.createElement("span");

@@ -1,5 +1,5 @@
-// CSS 読み込み
-const BASE_PATH = "/assets/css"
+import { getBasePath } from "../utils/base-path.js";
+const CSS_PATH = getBasePath() + "/assets/css";
 
 const cssFiles = [
     "/foundation/base.css",
@@ -20,11 +20,12 @@ const cssFiles = [
     "/foundation/responsive.css"
 ];
 
+// CSS 読み込み
 export function loadCssFiles() {
     cssFiles.forEach(path => {
         const link = document.createElement("link");
         link.rel = "stylesheet";
-        link.href = BASE_PATH + path;
+        link.href = CSS_PATH + path;
         document.head.appendChild(link);
     });
 }

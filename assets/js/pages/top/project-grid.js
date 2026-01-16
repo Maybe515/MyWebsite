@@ -1,6 +1,9 @@
+import { getBasePath } from "../../utils/base-path.js";
+const JSON_PATH = getBasePath() + "/data/top/project-cards.json";
+
 // プロジェクトグリッド作成
 export async function initProjects() {
-    const res = await fetch("/data/top/project-cards.json");
+    const res = await fetch(JSON_PATH);
     const projects = await res.json();
 
     const grid = document.querySelector(".project-grid");

@@ -1,5 +1,9 @@
+import { getBasePath } from "../../utils/base-path.js";
+const BASE_PATH = getBasePath();
+const JSON_PATH = BASE_PATH + "/data/profile/profile-contents.json";
+
 export async function initProfile() {
-    const res = await fetch("/data/profile/profile-contents.json");
+    const res = await fetch(JSON_PATH);
     const data = await res.json();
 
     /* ================================
@@ -48,7 +52,7 @@ export async function initProfile() {
         a.className = "profile-link";
 
         a.innerHTML = `
-            <img src="/assets/img/icons/${link.icon}" alt="${link.name}">
+            <img src="${BASE_PATH}/assets/img/icons/${link.icon}" alt="${link.name}">
             <span>${link.name}</span>
         `;
 
