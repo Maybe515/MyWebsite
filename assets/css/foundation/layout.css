@@ -1,0 +1,32 @@
+/* ----- レイアウト ----- */
+.layout {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.main-content-wrapper {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.main-content {
+    flex: 2;
+}
+
+/* ----- サイドバー トグルボタン（スマホ用） ----- */
+.side-toggle {
+    display: none;
+}
+
+/* ----- フッター ----- */
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: clamp(0.75rem, 2.8vw, 0.9rem);
+}

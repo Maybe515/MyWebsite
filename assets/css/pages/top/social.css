@@ -1,0 +1,80 @@
+/* ----- SNSアイコン ----- */
+.sidebar-social {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    margin: 0 6px;
+    border-radius: 50%;
+    transition: 
+        transform 0.25s ease, 
+        background-color 0.25s ease, 
+        opacity 0.25s ease, 
+        box-shadow 0.25s ease;
+}
+
+.social-icon img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+    opacity: 0.85;
+    transition: opacity var(--transition-mid);
+}
+
+.social-icon:hover {
+    transform: scale(1.12);
+    opacity: 0.95;
+    box-shadow: var(--shadow-md);
+}
+
+.social-icon:hover img {
+    opacity: 1;
+}
+
+.social-toggle {
+    margin-top: 12px;
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 4px 0;
+    transition: 0.2s;
+}
+.social-toggle:hover {
+    opacity: 0.7;
+}
+
+/* social-more */
+.social-more {
+    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 12px;
+    transition: max-height 0.35s ease;
+}
+
+/* SNSごとの色設定 */
+/* X (旧Twitter) */
+.social-x { background: #000; }
+.social-x:hover { background: #222; }
+.social-x img { filter: invert(1); }
+
+/* GitHub */
+.social-github { background: #181717; }
+.social-github:hover { background: #2a2929; }
+.social-github img { filter: invert(1); }
+
+/* Pixiv */
+.social-pixiv { background: #1491ff; }
+.social-pixiv:hover { background: #3ca4ff; }
+.social-pixiv img { filter: invert(1); }

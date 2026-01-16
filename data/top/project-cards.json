@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Nostr監視ちゃん",
+    "url": "https://github.com/Maybe515/Nostr-Observe-chan",
+    "description": "Nostrのkind:1イベントを監視し、指定キーワードと一致したイベントをDiscordにEmbed通知するbot",
+    "langs": ["js", "batch"]
+  },
+  {
+    "title": "Nostrリンクちゃん",
+    "url": "https://github.com/Maybe515/Nostr-Link-chan",
+    "description": "Nostrの指定Pubkey宛のkind: 1, 6, 7, 9735を取得してDiscordにEmbed通知するbot",
+    "langs": ["js", "batch"]
+  },
+  {
+    "title": "ゼンレスゾーンゼロ ダメージ計算ツール",
+    "url": "https://github.com/Maybe515/ZZZ-dmgCalc",
+    "description": "ゼンゼロのダメージを簡単に計算できるブラウザベースのツール",
+    "langs": ["html", "js", "css"]
+  }
+]

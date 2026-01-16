@@ -1,0 +1,59 @@
+{
+  "skills": {
+    "frontend": ["HTML", "CSS", "JavaScript", "jQuery", "Android", "AppInventor"],
+    "backend": ["C", "C++", "C#", "Java", "Python", "Ruby", "node.js ", "npm", "SQLite", ".NET", "DiscordBot", "RaspberryPi"],
+    "tools": ["Windows", "PowerShell", "Cmd", "VS Code", "Visual Studio", "GitHub", "Photoshop", "Illustrator", "Blender", "Discord"]
+  },
+  "links": [
+    { "name": "GitHub", "url": "https://github.com/Maybe515", "icon": "github.svg" },
+    { "name": "X", "url": "https://x.com/Maybe515", "icon": "x.svg" },
+    { "name": "Pixiv", "url": "https://www.pixiv.net/users/14572354", "icon": "pixiv.svg" }
+  ],
+  "timeline": {
+    "2026": [
+      { "month": "1", "event": "Maybe515 Studio を公開する" }
+    ],
+    "2025": [
+      { "month": "7", "event": "Nostr監視ちゃんを公開する" },
+      { "month": "7", "event": "Nostrリンクちゃんを公開する" },
+      { "month": "9", "event": "ゼンゼロダメージ計算ツールを公開する" },
+      { "month": "11", "event": "Nostrasia2025 のスライドを描く" }
+    ],
+    "2024": [
+      { "month": "", "event": "" }
+    ],
+    "2019": [
+      { "month": "", "event": "ファンアート（アナログ絵）を描く" }
+    ],
+    "2018": [
+      { "month": "", "event": "アクセサリー（ネックレス）作りをする" }
+    ],
+    "2017": [
+      { "month": "", "event": "母校の体育祭の応援装飾（イラスト）を担当する" }
+    ],
+    "2016": [
+      { "month": "", "event": "pixiv にて作品を投稿する" },
+      { "month": "", "event": "消しゴムはんこ・切り絵を始める" },
+      { "month": "", "event": "母校の体育祭の応援装飾（イラスト）を担当する" }
+    ],
+    "2015": [
+      { "month": "", "event": "同人サークル (MAYBEL) を開設" },
+      { "month": "", "event": "母校の体育祭の応援装飾（イラスト）を担当する" }
+    ],
+    "2014": [
+      { "month": "3", "event": "美少女系イラスト（アニメ調）を描き始める" }
+    ],
+    "2010": [
+      { "month": "", "event": "うごくメモ帳 で開催された格闘作品コンテストで入賞する" }
+    ],
+    "2009": [
+      { "month": "", "event": "うごくメモ帳にて作品を投稿する" },
+      { "month": "", "event": "ピクセルアートを描き始める" },
+      { "month": "", "event": "どうぶつの森シリーズでマイデザインを作成・配布する" },
+      { "month": "", "event": "モンハンの二次創作（マンガ、アート）を描く" }
+    ],
+    "2007": [
+      { "month": "", "event": "イラスト（主に版権・写実画）を描き始める" }
+    ]
+  }
+}

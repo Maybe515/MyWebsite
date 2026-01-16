@@ -1,0 +1,14 @@
+/* ----- ボタン共通 ----- */
+.btn {
+    padding: 12px 28px;
+    border: 2px solid var(--accent);
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 600;
+    transition: 0.2s;
+}
+.btn:hover {
+    background: var(--accent);
+    color: #fff;
+}

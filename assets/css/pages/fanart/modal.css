@@ -1,0 +1,91 @@
+/* === Modal (拡大表示) === */
+.fanart-modal {
+    display: none;
+    /* JSで切り替え */
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    padding: 20px;
+}
+
+.fanart-modal.open {
+    display: flex;
+}
+
+/* モーダル内の画像（元比率で表示） */
+.fanart-modal img {
+    max-width: 90vw;
+    max-height: 85vh;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    animation: fadeIn 0.25s ease;
+}
+
+/* キャプション */
+.fanart-modal-caption {
+    margin-top: 12px;
+    color: #fff;
+    font-size: clamp(0.85rem, 2.5vw, 1rem);
+    text-align: center;
+    opacity: 0.9;
+}
+
+/* 次へ・前へボタン */
+.fanart-modal-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.4rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+    user-select: none;
+}
+
+.fanart-modal-nav:hover {
+    opacity: 1;
+}
+
+.fanart-modal-prev {
+    left: 20px;
+}
+
+.fanart-modal-next {
+    right: 20px;
+}
+
+
+/* 閉じるボタン */
+.fanart-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+}
+
+.fanart-modal-close:hover {
+    opacity: 1;
+}
+
+/* フェードアニメーション */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

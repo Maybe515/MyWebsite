@@ -1,0 +1,10 @@
+/* ----- ギャラリーセクション ----- */
+.gallery-link {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* ファンアートボタン */
+.fanart-btn {
+    display: inline-block;
+}

@@ -1,0 +1,44 @@
+{
+  "primary": [
+    {
+      "name": "X",
+      "url": "https://x.com/Maybe515",
+      "icon": "x.svg",
+      "class": "social-x"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/Maybe515",
+      "icon": "github.svg",
+      "class": "social-github"
+    },
+    {
+      "name": "Pixiv",
+      "url": "https://www.pixiv.net/users/14572354",
+      "icon": "pixiv.svg",
+      "class": "social-pixiv"
+    }
+  ],
+  "more": [
+    {
+      "name": "YouTube",
+      "url": "#",
+      "icon": "youtube.svg"
+    },
+    {
+      "name": "TikTok",
+      "url": "#",
+      "icon": "tiktok.svg"
+    },
+    {
+      "name": "Bluesky",
+      "url": "#",
+      "icon": "bluesky.svg"
+    },
+    {
+      "name": "Discord",
+      "url": "#",
+      "icon": "discord.svg"
+    }
+  ]
+}

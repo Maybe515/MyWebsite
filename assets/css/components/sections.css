@@ -1,0 +1,23 @@
+/* ----- セクション共通 ----- */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.section-title {
+    font-size: clamp(1.4rem, 4.5vw, 2rem);
+    margin-bottom: 10px;
+}
+
+.section-desc {
+    font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+    color: #555;
+    margin-bottom: 40px;
+}
